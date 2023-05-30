@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prodigy Infotech Internship</title>
+    <style>
+      /* Add your CSS styles here */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      p {
+        color: #666;
+        line-height: 1.5;
+      }
+
+      /* Menu styles */
+      .menu {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 0;
+        background-color: transparent;
+        transition: background-color 0.3s;
+        font-size: xx-large;
+        font-weight: bold;
+      }
+
+      .menu-item {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .menu-item:hover {
+        color: #ff6600;
+      }
+
+      /* Scrolled menu style */
+      .scrolled {
+        background-color: #fff;
+      }
+
+      body{
+        background-color: #30c4e5;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navigation">
+      <ul class="menu">
+        <li><a href="#" class="menu-item">Home</a></li>
+        <li><a href="#" class="menu-item">About</a></li>
+        <li><a href="#" class="menu-item">Services</a></li>
+        <li><a href="#" class="menu-item">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1>Welcome to Prodigy Infotech Internship!</h1>
+      <p>
+        At Prodigy Infotech, we offer a dynamic and enriching internship program
+        designed to nurture aspiring web developers like you.
+      </p>
+      <p>
+        During your internship, you will have the opportunity to work on
+        real-world projects, collaborate with experienced professionals, and
+        enhance your technical skills.
+      </p>
+      <p>
+        We believe in hands-on learning, and as an intern, you will be actively
+        involved in creating innovative web solutions that make a difference.
+      </p>
+      <p>
+        At Prodigy Infotech, we value teamwork, creativity, and a passion for
+        continuous learning. Our supportive environment ensures that you receive
+        mentorship and guidance throughout your internship journey.
+      </p>
+      <p>
+        Join us at Prodigy Infotech and embark on a rewarding internship
+        experience that will shape your future as a web developer!
+      </p>
+
+      <script>
+        // Change menu background color on scroll
+        
+        window.addEventListener("scroll", function () {
+          var navigation = document.querySelector(".navigation");
+          if (window.scrollY > 0) {
+            navigation.style.backgroundColor = "#fff"; // Change background color when scrolled
+          } else {
+            navigation.style.backgroundColor = "transparent"; // Revert back to transparent background when scrolled back to the top
+          }
+        });
+
+        var menuItems = document.querySelectorAll(".menu-item");
+        menuItems.forEach(function (item) {
+          item.addEventListener("mouseover", function () {
+            this.style.color = "#ff6600"; // Change font color when hovered over
+          });
+          item.addEventListener("mouseout", function () {
+            this.style.color = "#333"; // Revert back to default font color when not hovered over
+          });
+        });
+      </script>
+    </div>
+  </body>
+</html>
